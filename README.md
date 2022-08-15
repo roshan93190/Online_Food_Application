@@ -28,7 +28,7 @@
 
 <li>@Roshan kumar</li>
 <li>@Niraj kumar</li>
-<li>@Amans singh yadav</li>
+<li>@Ankit Singh Sadav</li>
 <li>@Shivani gupta</li>
 <li>@Tanish mangal</li>
 <li>@Mohit kaushik</li>
