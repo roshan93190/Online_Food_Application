@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.food.model.Owner;
 import com.food.model.UserType;
-import com.food.service.OwnerService;
+import com.food.Service.OwnerService;
 
 @RestController
 @RequestMapping("/foodPanda")
