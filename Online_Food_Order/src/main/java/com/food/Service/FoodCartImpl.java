@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.food.model.FoodCart;
-import com.food.repository.FoodCartRepo;
+import com.food.Repository.FoodCartRepo;
 
 @Service
 public class FoodCartImpl implements FoodCartService{
