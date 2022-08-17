@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.food.model.Customer;
 import com.food.model.FoodCart;
 import com.food.model.UserType;
-import com.food.service.CustomerService;
-import com.food.service.FoodCartService;
+import com.food.Service.CustomerService;
+import com.food.Service.FoodCartService;
 
 @RestController
 @RequestMapping("/foodPanda")

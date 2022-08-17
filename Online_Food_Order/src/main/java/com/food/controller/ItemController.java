@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.food.model.Item;
-import com.food.service.ItemService;
+import com.food.Service.ItemService;
 
 @RestController
 @RequestMapping("/foodPanda")
