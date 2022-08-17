@@ -6,10 +6,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.niraj.model.Address;
-import com.niraj.model.User;
-import com.niraj.service.AddressService;
-import com.niraj.model.Customer;
+import com.food.Service.AddressService;
+import com.food.model.Address;
+import com.food.model.User;
+
+
 
 @RestController
 @RequestMapping("/foodPanda")
