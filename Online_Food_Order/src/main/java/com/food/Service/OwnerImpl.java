@@ -13,8 +13,8 @@ import com.food.model.LoginStatus;
 import com.food.model.Owner;
 import com.food.model.UserDTO;
 import com.food.model.UserType;
-import com.food.repository.LoginRepo;
-import com.food.repository.OwnerRepo;
+import com.food.Repository.LoginRepo;
+import com.food.Repository.OwnerRepo;
 
 @Service
 public class OwnerImpl implements OwnerService {

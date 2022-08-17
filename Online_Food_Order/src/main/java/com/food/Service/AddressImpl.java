@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.food.Exception.StudentException;
+//import com.food.Exception.StudentException;
 import com.food.model.Address;
 import com.food.model.User;
 import com.food.model.UserType;
@@ -14,9 +14,9 @@ import com.food.model.Customer;
 import com.food.model.Login;
 import com.food.model.LoginStatus;
 import com.food.model.Owner;
-import com.food.repository.AddressRepo;
-import com.food.repository.CustomerRepo;
-import com.food.repository.OwnerRepo;
+import com.food.Repository.AddressRepo;
+import com.food.Repository.CustomerRepo;
+import com.food.Repository.OwnerRepo;
 
 @Service
 public class AddressImpl implements AddressService{
@@ -37,25 +37,23 @@ public class AddressImpl implements AddressService{
 	@Override
 	public User addAddress(Address address){
 		
-		User user = loginService.loginDetail();
+		Login login = loginService.loginDetail();
 		
-		if(user.getUserType() == UserType.CUSTOMER) {
-			Optional<Customer> opt = custRepo.findById(user.getUserId());
-			System.out.println("login----"+opt.get());
-			address.setUser(user);
+		if(login.getUserType() == UserType.CUSTOMER) {
+			Optional<Customer> opt = custRepo.findById(login.getUserId());
+			address.setUser(opt.get());
 			addressRepo.save(address);
 			opt.get().getAddress().add(address);
 			custRepo.save(opt.get());
-			return user;
+			return opt.get();
 		}
 		else {
-			Optional<Owner> opt = ownerRepo.findById(user.getUserId());
-			System.out.println("login----"+opt.get());
-			address.setUser(user);
+			Optional<Owner> opt = ownerRepo.findById(login.getUserId());
+			address.setUser(opt.get());
 			addressRepo.save(address);
 			opt.get().getAddress().add(address);
 			ownerRepo.save(opt.get());
-			return user;
+			return opt.get();
 		}
 		
 	}
