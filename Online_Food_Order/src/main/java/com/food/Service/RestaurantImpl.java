@@ -117,6 +117,7 @@ public class RestaurantImpl implements RestaurantService{
 //			return opt.get();
 		}
 		else {
+//			throw Exception
 			throw new StudentException("Invalid restaurant ID");
 		}
 	}
