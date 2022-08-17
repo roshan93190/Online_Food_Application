@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.food.model.Category;
-import com.food.service.CategoryService;
+import com.food.Service.CategoryService;
 
 @RestController
 @RequestMapping("/foodPanda")
