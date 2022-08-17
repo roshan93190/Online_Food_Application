@@ -5,8 +5,10 @@ import com.food.model.UserType;
 
 public interface FoodCartService {
 	
-	public FoodCart addToCart(int id,int quty,UserType userType);
+	public FoodCart addToCart(Integer itemId, Integer itemQty, UserType userType);
 	
 	public String removeFromCart(Integer itemId);
+	
+	public FoodCart cartItems();
 
 }
