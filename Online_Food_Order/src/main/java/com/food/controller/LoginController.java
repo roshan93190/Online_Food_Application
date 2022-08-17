@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.food.model.User;
 import com.food.model.UserDTO;
-import com.food.service.LoginService;
+import com.food.Service.LoginService;
 
 
 @RestController

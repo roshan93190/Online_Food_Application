@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.food.model.Address;
 import com.food.model.Item;
 import com.food.model.Restaurant;
-import com.food.service.RestaurantService;
+import com.food.Service.RestaurantService;
 
 
 @RestController
